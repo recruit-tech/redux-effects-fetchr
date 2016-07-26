@@ -58,7 +58,7 @@ function fetchUser(user) {
 Using it:
 
 ```javascript
-const propmise = store.dispatch(fetchUser({ user }));
+const promise = store.dispatch(fetchUser({ user }));
 ```
 
 ## API (Action Creators)
