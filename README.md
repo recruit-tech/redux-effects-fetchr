@@ -23,7 +23,7 @@ import fetchrMiddleware from 'redux-effects-fetchr';
 import rootReducer from './reducers';
 
 const fetchr = new Fetchr({
-  xhrPaht: '/api'
+  xhrPath: '/api'
 });
 
 const store = createStore(
