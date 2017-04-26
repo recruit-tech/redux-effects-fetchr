@@ -3,7 +3,7 @@ import assert from 'assert';
 import mustCall from 'must-call';
 import { createStore, applyMiddleware } from 'redux';
 import Fetchr from 'fetchr';
-import { default as fetchrMiddleware, fetchrCreate, fetchrRead, fetchrUpdate, fetchrDelete } from '../src';
+import fetchrMiddleware, { fetchrCreate, fetchrRead, fetchrUpdate, fetchrDelete } from '../src';
 import service from './fixtures/service';
 
 Fetchr.registerService(service);
