@@ -11,19 +11,27 @@ export const FETCHR = 'EFFECT_FETCHR';
 const createFetchrAction = createAction(FETCHR);
 
 export const fetchrCreate = (resource, params, body, config) => (
-  createFetchrAction({ type: 'create', resource, params, body, config })
+  typeof resource === 'string'
+    ? createFetchrAction({ type: 'create', resource, params, body, config })
+    : createFetchrAction({ ...resource, type: 'create' })
 );
 
 export const fetchrRead = (resource, params, config) => (
-  createFetchrAction({ type: 'read', resource, params, config })
+  typeof resource === 'string'
+    ? createFetchrAction({ type: 'read', resource, params, config })
+    : createFetchrAction({ ...resource, type: 'read' })
 );
 
 export const fetchrUpdate = (resource, params, body, config) => (
-  createFetchrAction({ type: 'update', resource, params, body, config })
+  typeof resource === 'string'
+    ? createFetchrAction({ type: 'update', resource, params, body, config })
+    : createFetchrAction({ ...resource, type: 'update' })
 );
 
 export const fetchrDelete = (resource, params, config) => (
-  createFetchrAction({ type: 'delete', resource, params, config })
+  typeof resource === 'string'
+    ? createFetchrAction({ type: 'delete', resource, params, config })
+    : createFetchrAction({ ...resource, type: 'delete' })
 );
 
 /*

@@ -64,24 +64,28 @@ const promise = store.dispatch(fetchUser({ user }));
 ## API (Action Creators)
 
 ### `fetchrCreate(resource, params = {}, body = {}, config = {})`
+### `fetchrCreate({ resource, params = {}, body = {}, config = {} })`
 
 Call the create method of a service. See
 [fetchr API docs](https://github.com/yahoo/fetchr/blob/master/docs/fetchr.md#createresource-params-body-config-callback)
 for more info.
 
 ### `fetchrDelete(resource, params = {}, config = {})`
+### `fetchrDelete({ resource, params = {}, config = {} })`
 
 Call the delete method of a service. See
 [fetchr API docs](https://github.com/yahoo/fetchr/blob/master/docs/fetchr.md#deleteresource-params-config-callback)
 for more info.
 
 ### `fetchrRead(resource, params = {}, config = {})`
+### `fetchrRead({ resource, params = {}, config = {} })`
 
 Call the read method of a service. See
 [fetchr API docs](https://github.com/yahoo/fetchr/blob/master/docs/fetchr.md#readresource-params-config-callback)
 for more info.
 
 ### `fetchrUpdate(resource, params = {}, body = {}, config = {})`
+### `fetchrUpdate({ resource, params = {}, body = {}, config = {} })`
 
 Call the update method of a service. See
 [fetchr API docs](https://github.com/yahoo/fetchr/blob/master/docs/fetchr.md#updateresource-params-body-config-callback)
