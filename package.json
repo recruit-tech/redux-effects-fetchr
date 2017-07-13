@@ -1,6 +1,6 @@
 {
   "name": "redux-effects-fetchr",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "yahoo/fetchr binding for redux-effects",
   "keywords": [
     "actions",
